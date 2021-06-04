@@ -24,7 +24,6 @@ body{
 body::before{
   content: '';
   position: absolute;
-  /* width: 100%; */
   bottom: 0;
   right: 0;
   top: 0;
@@ -36,6 +35,7 @@ body::before{
 .container{
   width: 60%;
   margin: auto;
+  /* border: 2px solid black; */
 }
 .container > h1{
   font-size: 3rem;
@@ -55,9 +55,8 @@ body::before{
   color: white;
   padding: 3.5rem 3rem;
   border-radius: .5rem;
-  width: 100%;
   border: 1px solid white;
-  /* padding-bottom: 1000px; */
+
 }
 
 #survey-form label, #survey-form p{
