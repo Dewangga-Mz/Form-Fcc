@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <section class="container">
+    <h1 id="title">Programing Survey Form</h1>
+    <p id="description">Thank you for taking the time</p>
+    <form action="" id="survey-form">
+      <label for="name" id="name-label">Name</label>
+      <input type="text" id="name" placeholder="Enter Your Name">
+
+      <label for="email" id="email-label">Email</label>
+      <input type="email" id="email" placeholder="Enter Your Email">
+
+      <label for="number" id="number-label">Age <small>(optional)</small></label>
+      <input type="number" id="number" placeholder="Ages" min="10" max="40">
+
+      <div class="favorit">
+        <p>your preferred language</p>
+        <select name="dropdown" id="dropdown">
+          <option value="">Other</option>
+          <option value="">JavaScript</option>
+          <option value="">PHP</option>
+          <option value="">C#</option>
+          <option value="">Pyhton</option>
+        </select>
+      </div>
+
+      <div class="gender">
+        <p>Gender</p>
+        <input type="radio" name="gender" id="laki-laki">
+        <label for="laki-laki" class="pria">Pria</label>
+        <input type="radio" name="gender" id="wanita">
+        <label for="wanita">Wanita</label>
+      </div>
+
+      <div class="bahasa">
+        <p>programming language that you are good at</p>
+        <div class="i">
+          <input type="checkbox" id="1" value="1">
+          <label for="1">JavaScript</label>
+        </div>
+        <div class="i">
+          <input type="checkbox" id="2" value="2">
+          <label for="2">Ruby</label>
+        </div>
+        <div class="i">
+          <input type="checkbox" id="3" value="3">
+          <label for="3">Python</label>
+        </div>
+        <div class="i">
+          <input type="checkbox" id="4" value="4">
+          <label for="4">PHP</label>
+        </div>
+        <div class="i">
+          <input type="checkbox" id="5" value="5">
+          <label for="5">Golang</label>
+        </div>
+        <div class="i">
+          <input type="checkbox" id="6" value="6">
+          <label for="6">C++</label>
+        </div>
+      </div>
+
+      <p class="areas">Any comments or suggestions?</p>
+      <textarea name="comment" id="textarea" cols="30" rows="10" placeholder="Input your comment here..."></textarea>
+      <!-- <input type="textarea" placeholder="input your comment here..." rows="4" cols="10"> -->
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+</body>
+</html>

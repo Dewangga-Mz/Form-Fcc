@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins';
+}
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body{
+  width: 100%;
+  min-height: 100vh;
+  background: url(1.jpg) no-repeat;
+  background-clip: border-box;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  padding-top: 3rem;
+  z-index: -1;
+}
+body::before{
+  content: '';
+  position: absolute;
+  /* width: 100%; */
+  bottom: 0;
+  right: 0;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  background: rgba(28, 16, 71, 0.5);
+}
+
+.container{
+  width: 60%;
+  margin: auto;
+}
+.container > h1{
+  font-size: 3rem;
+  color: white;
+  text-shadow: 0 1.5rem 5rem rgba(0, 0, 0, .5);
+  text-align: center;
+}
+.container > p{
+  color: white;
+  text-align: center;
+  font-size: 1.7rem;
+  margin-bottom: 3rem;
+}
+
+#survey-form{
+  background: rgba(0, 0, 0, .8);
+  color: white;
+  padding: 3.5rem 3rem;
+  border-radius: .5rem;
+  width: 100%;
+  border: 1px solid white;
+  /* padding-bottom: 1000px; */
+}
+
+#survey-form label, #survey-form p{
+  font-size: 1.6rem;
+  margin-bottom: .3rem;
+}
+
+#survey-form > input{
+   display: block;
+   width: 100%;
+   height: 3.4rem;
+   padding: .2rem 1.2rem;
+   box-sizing: border-box;
+   margin-bottom: 1.5rem;
+   border-radius: .5rem;
+   outline: none;
+   border: none;
+}
+#survey-form > input:focus, #textarea:focus{
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+ #survey-form > input:focus::placeholder{
+   color: white;
+ }
+
+ .favorit #dropdown{
+  width: 100%;
+  height: 3.4rem;
+  margin-bottom: 1.5rem;
+ }
+
+ .gender label{
+   margin: 0 1rem 0 .6rem;
+ }
+ .gender{
+   margin-bottom: .8rem;
+ }
+ .bahasa{
+   display: inline-block;
+   margin-bottom: .8rem;
+ }
+ .bahasa input{
+   width: 1.5rem;
+   height: 1.5rem;
+   margin-right: 1rem;
+ }
+ .bahasa .i{
+   display: flex;
+   align-items: center;
+ }
+ .bahasa .i label{
+   margin-top: .5rem;
+ }
+
+ .container #survey-form #textarea{
+  min-height: 14rem;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: .8rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: .5rem;
+  outline: none;
+ }
+
+ #survey-form button{
+  width: 100%;
+  height: 3.4rem;
+  color: white;
+  font-size: 1.7rem;
+  background: transparent;
+  border: 2px solid white;
+  box-sizing: border-box;
+  outline: none;
+  transition: .3s;
+ }
+
+ #survey-form button:hover{
+   background: white;
+   color: rgb(11, 11, 48);
+ }
